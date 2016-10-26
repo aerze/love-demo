@@ -1,10 +1,10 @@
 
-local const = require('constants')
+local CONST = require('constants')
 
 local system = {}
 
 function system:update(dt) 
-    if (love.keyboard.isDown(const.keys.close)) then
+    if (love.keyboard.isDown(CONST.KEYS.CLOSE)) then
         love.event.push('quit')
     end
 end

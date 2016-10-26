@@ -1,5 +1,5 @@
 
-local const = require('constants')
+local CONST = require('constants')
 
 local player = {
     x = 150,
@@ -9,8 +9,9 @@ local player = {
 }
 
 function player:load(arg)
-    self.img = love.graphics.newImage(const.image.player)
+    self.img = love.graphics.newImage(CONST.IMAGE.PLAYER)
 end
+
 
 function player:update(dt) 
     if love.keyboard.isDown('left', 'a') then
@@ -23,6 +24,7 @@ function player:update(dt)
         end
     end
 end
+
 
 function player:draw(dt)
     love.graphics.draw(self.img, self.x, self.y)

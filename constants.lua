@@ -1,14 +1,14 @@
 
 
 local imageLocations = {
-    player = 'assets/aircrafts/Aircraft_03.png'
+    PLAYER = 'assets/aircrafts/Aircraft_03.png'
 }
 
 local keyBindings = {
-    close = 'escape'
+    CLOSE = 'escape'
 }
 
 return {
-    image = imageLocations,
-    keys = keyBindings
+    IMAGE = imageLocations,
+    KEYS = keyBindings
 }
