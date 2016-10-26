@@ -3,5 +3,5 @@ function love.conf(conf)
     conf.window.borderless = true
     conf.window.highdpi = true
     
-    conf.console = true
+    -- conf.console = true
 end
