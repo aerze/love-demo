@@ -64,4 +64,16 @@ function controls:shoot()
     return love.keyboard.isDown('space')
 end
 
+function controls:close()
+    local back = false
+    local escape = false
+
+    if controller then
+        back = controller:isGamepadDown('back')
+    end
+    escape = love.keyboard.isDown('escape')
+
+    return back or escape
+end
+
 return controls
